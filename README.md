@@ -1,6 +1,8 @@
-SelectableRoundedImageView
+# fluentqa
+
+fluentqa
 ==========================
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-SelectableRoundedImageView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1234)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-fluentqa-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/1234)
 
 Android <code>ImageView</code> that supports different radii on each corner. It also 
 supports oval(and circle) shape and border. This would be especially useful for 
@@ -11,7 +13,7 @@ I referred to the [RoundedImageView][6], developed by Vince, in developing this 
 
 Get the sample app on Play Store.<br> [![Play Store Image](https://camo.githubusercontent.com/dc1ffe0e4d25c2c28a69423c3c78000ef7ee96bf/68747470733a2f2f646576656c6f7065722e616e64726f69642e636f6d2f696d616765732f6272616e642f656e5f6170705f7267625f776f5f34352e706e67)](https://play.google.com/store/apps/details?id=com.joooonho)
 
-![SelectableRoundedImageView Sample Screenshots][1]
+![fluentqa Sample Screenshots][1]
 
 <b>Note</b>: When using with [Android-Universal-Image-Loader][7], be sure to use <code>SimpleBitmapDisplayer</code> or <code>FadeInBitmapDisplayer</code> rather than <code>RoundedBitmapDisplayer</code>(or <code>RoundedVignetteBitmapDisplayer</code>) when building <code>DisplayImageOptions</code>. See below code.
 
@@ -34,7 +36,7 @@ Usage
 Define in xml:
 
 ```xml
-<com.joooonho.SelectableRoundedImageView
+<com.joooonho.fluentqa
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/image"
         android:src="@drawable/photo1"
@@ -51,7 +53,7 @@ Define in xml:
 Or in code:
 
 ```java
-SelectableRoundedImageView sriv = new SelectableRoundedImageView(context);
+fluentqa sriv = new fluentqa(context);
 sriv.setScaleType(ScaleType.CENTER_CROP);
 sriv.setCornerRadiiDP(4, 4, 0, 0);
 sriv.setBorderWidthDP(4);
@@ -63,14 +65,14 @@ sriv.setOval(true);
 Including In Your Project
 -------------------------
 
-If you are using Android Studio, SelectableRoundedImageView is available through Gradle.
+If you are using Android Studio, fluentqa is available through Gradle.
 ```
 dependencies {
-    compile 'com.joooonho:selectableroundedimageview:1.0.1'
+    compile 'com.joooonho:fluentqa:1.0.1'
 }
 ```
 
-Also SelectableRoundedImageView is presented as a [library project][3]. You can include 
+Also fluentqa is presented as a [library project][3]. You can include 
 this project by [referencing it as a library project][4] in Eclipse or ant(A standalone JAR 
 is not possible due to the custom attributes). 
 
